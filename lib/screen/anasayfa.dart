@@ -17,8 +17,7 @@ class AnaSayfa extends StatelessWidget {
         ),
         body: Column(
           children: [
-            InkWell
-            (
+            InkWell(
               child: AnaEleman(
                 child: Text("lemalyie"),
               ),
