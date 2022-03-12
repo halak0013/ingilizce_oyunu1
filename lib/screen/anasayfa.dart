@@ -10,16 +10,19 @@ class AnaSayfa extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: COLOR_BASLIK_BORDO,
         appBar: AppBar(
           title: Text("Faster Speaking"),
           backgroundColor: COLOR_BASLIK_BORDO,
         ),
         body: Column(
           children: [
-            AnaEleman(
-              child:
-                  ElevatedButton(child: Text("merhananan"), onPressed: (() {})),
-            )
+            InkWell
+            (
+              child: AnaEleman(
+                child: Text("lemalyie"),
+              ),
+            ),
           ],
         ),
       ),
