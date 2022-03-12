@@ -29,7 +29,8 @@ class AnaEleman extends StatelessWidget {
       decoration: BoxDecoration(
           color: color ?? COLOR_YAVYUAGZI,
           borderRadius: BorderRadius.circular(15),
-          border: Border.all(color: COLOR_BLACK, width: 2)),
+          border: Border.all(color: COLOR_BLACK, width: 2),
+          ),
     );
   }
 }

@@ -13,6 +13,7 @@ class IngilizceOyun extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
         color: COLOR_BASLIK_BORDO,
         /* theme: ThemeData(
           colorScheme:
