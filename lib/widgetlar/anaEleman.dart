@@ -25,12 +25,11 @@ class AnaEleman extends StatelessWidget {
       child: Center(
         child: child,
       ),
-      padding: padding ?? const EdgeInsets.all(8.0),
+      //padding: padding ?? const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        color: color ?? COLOR_YAVYUAGZI,
-        borderRadius: BorderRadius.circular(15),
-        border: Border.all(color: COLOR_BLACK, width: 2)
-      ),
+          color: color ?? COLOR_YAVYUAGZI,
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(color: COLOR_BLACK, width: 2)),
     );
   }
 }
