@@ -19,7 +19,7 @@ class AnaSayfa extends StatelessWidget {
           children: [
             InkWell(
               child: AnaEleman(
-                child: Text("lemalyie"),
+                child: Text("EHMET DEMİR"),
               ),
             ),
           ],
