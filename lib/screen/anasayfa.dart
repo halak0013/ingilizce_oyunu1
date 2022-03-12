@@ -1,5 +1,6 @@
 //Bisimllahirramanirrahim
 import 'package:flutter/material.dart';
+import 'package:ingilizce_oyunu1/constants/ekranGecisi.dart';
 import 'package:ingilizce_oyunu1/screen/ayarlar.dart';
 import 'package:ingilizce_oyunu1/screen/hakkinda.dart';
 import 'package:ingilizce_oyunu1/screen/menu.dart';
@@ -26,6 +27,12 @@ class AnaSayfa extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             
             children: [
+              Image.asset("assets/images/yazi.png"),
+              Divider(
+                color: COLOR_BLACK,
+                thickness: 3,
+              ),
+              SizedBox(height: ARALIK_GENISLIK,),
               inkButton(context, Menu(),"Başlangıç"),
               inkButton(context, Hakkinda(),"Hakkında"),
               inkButton(context, Ayarlar(),"Ayarlar"),
@@ -39,10 +46,7 @@ class AnaSayfa extends StatelessWidget {
   InkWell inkButton(BuildContext context, Widget widget,String baslik) {
     return InkWell(
       onTap: (() {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (builder) => widget),
-        );
+        gec(context, widget);
       }),
       child: Column(
         children: [
@@ -53,7 +57,7 @@ class AnaSayfa extends StatelessWidget {
           ),
           const SizedBox(
             height: ARALIK_GENISLIK,
-          )
+          ),
         ],
       ),
     );
