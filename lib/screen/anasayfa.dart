@@ -22,21 +22,23 @@ class AnaSayfa extends StatelessWidget {
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 40),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            
-            children: [
-              Image.asset("assets/images/yazi.png"),
-              Divider(
-                color: COLOR_BLACK,
-                thickness: 3,
-              ),
-              SizedBox(height: ARALIK_GENISLIK,),
-              inkButton(context, Menu(),"Başlangıç"),
-              inkButton(context, Hakkinda(),"Hakkında"),
-              inkButton(context, Ayarlar(),"Ayarlar"),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              
+              children: [
+                Image.asset("assets/images/yazi.png"),
+                Divider(
+                  color: COLOR_BLACK,
+                  thickness: 3,
+                ),
+                SizedBox(height: ARALIK_GENISLIK,),
+                inkButton(context, Menu(),"Başlangıç"),
+                inkButton(context, Hakkinda(),"Hakkında"),
+                inkButton(context, Ayarlar(),"Ayarlar"),
+              ],
+            ),
           ),
         ),
       );

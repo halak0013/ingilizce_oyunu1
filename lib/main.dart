@@ -15,11 +15,13 @@ class IngilizceOyun extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
         color: COLOR_BASLIK_BORDO,
-        /* theme: ThemeData(
+        theme: ThemeData(
           colorScheme:
               ColorScheme.fromSwatch().copyWith(secondary: COLOR_BASLIK_BORDO),
+              cardColor: COLOR_BASLIK_BORDO,
+              primaryColorLight: COLOR_BASLIK_BORDO,
           primaryColor: COLOR_BASLIK_BORDO,
-        ), */
+        ),
         home: AnaSayfa());
   }
 }
