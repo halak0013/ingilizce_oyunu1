@@ -13,15 +13,14 @@ class IngilizceOyun extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        color: COLOR_BASLIK_BORDO,
         theme: ThemeData(
-          colorScheme:
-              ColorScheme.fromSwatch().copyWith(secondary: COLOR_BASLIK_BORDO),
-              cardColor: COLOR_BASLIK_BORDO,
-              primaryColorLight: COLOR_BASLIK_BORDO,
-          primaryColor: COLOR_BASLIK_BORDO,
+          primaryColor: COLOR_YAVYUAGZI,
+          scaffoldBackgroundColor: COLOR_BASLIK_BORDO,
+          appBarTheme: AppBarTheme(backgroundColor: COLOR_BASLIK_BORDO),
+          
         ),
+        debugShowCheckedModeBanner: false,
+        color: COLOR_BASLIK_BORDO,
         home: AnaSayfa());
   }
 }
