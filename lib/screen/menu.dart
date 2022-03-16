@@ -1,3 +1,5 @@
+//Bimillahirrahmanirrahim
+
 import 'package:flutter/material.dart';
 import 'package:ingilizce_oyunu1/widgetlar/m_anaEleman.dart';
 
@@ -10,7 +12,13 @@ class Menu extends StatelessWidget {
       appBar:AppBar(title: Text("Bölümler"),),
       body: Column(
         children: [
-          AnaElaman2(),
+          VarsayilanButon(text: "Hikaye Modu",),
+          VarsayilanButon(text: "Tartışma Modu"),
+          VarsayilanButon(text: "Dialog Modu"),
+          VarsayilanButon(text: "Yasak Kelime Modu"),
+          VarsayilanButon(text: "Kelime Bulma Modu"),
+          VarsayilanButon(text: "Dini Modu"),
+          VarsayilanButon(text: "Kalıp Bulma Modu"),
         ],
       ),
     );
