@@ -56,7 +56,7 @@ class AnaSayfa extends StatelessWidget {
           AnaEleman(
             child: Text(
               baslik,
-              style: themeData.textTheme.headline2,
+              style: themeData.textTheme.headline3,
               textAlign: TextAlign.center,
             ),
           ),
