@@ -8,7 +8,11 @@ class Menu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(title: Text("Bölümler"),),
-      body: AnaElaman2(),
+      body: Column(
+        children: [
+          AnaElaman2(),
+        ],
+      ),
     );
   }
 }
