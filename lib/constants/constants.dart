@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+//! renklerde ilk parametre alpa(şeffaflık) 2. R(red,krmızı), 3. G(green,yeşil), 4.B(blue,mavi) 
 const Color COLOR_BLACK = Colors.black;
 const Color COLOR_MENU_BEYAZ = Color.fromARGB(255, 255, 242, 234);
 const Color COLOR_YAVYUAGZI = Color.fromARGB(255, 254, 205, 170);
