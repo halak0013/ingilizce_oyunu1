@@ -1,6 +1,8 @@
 //Bimillahirrahmanirrahim
 
 import 'package:flutter/material.dart';
+import 'package:ingilizce_oyunu1/constants/ekranGecisi.dart';
+import 'package:ingilizce_oyunu1/screen/Bolumler/storyMod.dart';
 import 'package:ingilizce_oyunu1/widgetlar/m_anaEleman.dart';
 
 class Menu extends StatelessWidget {
@@ -12,7 +14,7 @@ class Menu extends StatelessWidget {
       appBar:AppBar(title: Text("Bölümler"),),
       body: Column(
         children: [
-          VarsayilanButon(text: "Hikaye Modu",),
+          VarsayilanButon(text: "Hikaye Modu",fonksiyon: (){gec(context, StoryMod());},),
           VarsayilanButon(text: "Tartışma Modu"),
           VarsayilanButon(text: "Dialog Modu"),
           VarsayilanButon(text: "Yasak Kelime Modu"),
