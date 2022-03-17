@@ -27,7 +27,7 @@ class SabitConteynir extends StatelessWidget {
           borderRadius: BorderRadius.circular(radius!),
           color: colors,
         ),
-        child:child,
+        child:child??Text("12"),
       ),
     );
   }
