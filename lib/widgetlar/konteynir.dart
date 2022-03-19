@@ -20,14 +20,16 @@ class SabitConteynir extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
-        height: height ?? ARALIK_GENISLIK,
-        width: width ?? BUTTON_GENISLIK,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(radius!),
-          color: colors,
+      child: Center(
+        child: Container(
+          height: height ?? ARALIK_GENISLIK,
+          width: width ?? BUTTON_GENISLIK,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(radius!),
+            color: colors,
+          ),
+          child:child,
         ),
-        child:child??Text("12"),
       ),
     );
   }

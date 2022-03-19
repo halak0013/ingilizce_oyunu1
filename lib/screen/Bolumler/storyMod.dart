@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ingilizce_oyunu1/constants/constants.dart';
 import 'package:ingilizce_oyunu1/widgetlar/konteynir.dart';
 
+import '../../widgetlar/m_anaEleman.dart';
+
 
 
 class StoryMod extends StatefulWidget {
@@ -22,6 +24,7 @@ class _StoryModState extends State<StoryMod> {
       body: Center(
         
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Row(
               mainAxisSize: MainAxisSize.max,
@@ -32,14 +35,7 @@ class _StoryModState extends State<StoryMod> {
               ],
             ),
             Text("Sure: ${widget.sure}",style:TEXT_THEME_DEFAULT_WHITE.headline1,),
-            SabitConteynir(
-              colors: COLOR_MENU_BEYAZ,
-              height: 54,
-            ),
-            SabitConteynir(
-              colors: COLOR_MENU_BEYAZ,
-              height: 54,
-            ),
+            
           ],
         ),
       ),

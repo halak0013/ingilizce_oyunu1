@@ -4,7 +4,7 @@ import 'package:ingilizce_oyunu1/constants/constants.dart';
 
 class VarsayilanButon extends StatelessWidget {
   final void Function()? fonksiyon;
-  final String text;
+  final String? text;
   Color color;
   final double? widht;
   final double? height;
@@ -15,7 +15,7 @@ class VarsayilanButon extends StatelessWidget {
     this.widht,
     this.height,
 
-    required this.text
+    this.text
   }) : super(key: key);
 
   @override
@@ -31,7 +31,7 @@ class VarsayilanButon extends StatelessWidget {
             height: height??ARALIK_GENISLIK,
             child: Center(
               child: Text(
-                text,
+                text??"",
                 textAlign: TextAlign.center,
                 style: TEXT_THEME_DEFAULT.headline4,
               ),
